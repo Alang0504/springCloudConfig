@@ -14,7 +14,7 @@ spring:
   application:
     name: microservice-config-client-test
     
----
+
 server:
   port: 8090
 
