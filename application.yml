@@ -1,6 +1,6 @@
 ---
 spring:
-  profiles: dev
+  profiles: sit
   application:
     name: consumption-server-sit #服务名
     
