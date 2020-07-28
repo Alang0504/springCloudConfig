@@ -9,6 +9,12 @@ spring:
     name: microservice-config-client-dev
     
 ---
+spring:
+  profiles: test
+  application:
+    name: microservice-config-client-test
+    
+---
 server:
   port: 8090
 
@@ -21,7 +27,7 @@ eureka:
     prefer-ip-address: true
 
 spring:
-  profiles: test
+  profiles: sit
   application:
     name: consumption-server-ribbon #服务名
 
