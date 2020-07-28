@@ -2,7 +2,7 @@
 spring:
   profiles: dev
   application:
-    name: consumption-server-ribbon #服务名
+    name: consumption-server-sit #服务名
     
 server:
   port: 8090
@@ -12,7 +12,7 @@ eureka:
     service-url:
       defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/ #注册到服务中心
   instance:
-    instance-id: 产品消费服务ribbon-8090 #给服务起个别名
+    instance-id: test_sit
     prefer-ip-address: true
 
 #开启feign的断路器
