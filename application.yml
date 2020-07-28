@@ -1,20 +1,9 @@
-spring:
-  profiles:
-    active:
-      - dev
 ---
 spring:
   profiles: dev
   application:
-    name: microservice-config-client-dev
+    name: consumption-server-ribbon #服务名
     
----
-spring:
-  profiles: test
-  application:
-    name: microservice-config-client-test
-    
-
 server:
   port: 8090
 
@@ -25,12 +14,6 @@ eureka:
   instance:
     instance-id: 产品消费服务ribbon-8090 #给服务起个别名
     prefer-ip-address: true
-
-spring:
-  profiles: sit
-  application:
-    name: consumption-server-ribbon #服务名
-
 
 #开启feign的断路器
 feign:
