@@ -19,4 +19,5 @@ eureka:
 feign:
   hystrix:
     enabled: true
-name: chenzhenghui
+    
+name: zhouziya
